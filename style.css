@@ -5,6 +5,10 @@ html, body {
   height: 100%;
   background-color: #414ef8;
   color: #fff;
+  /* disable text highlight */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 }
 
 @media (min-width: 300px) {
