@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +31,10 @@
 ?>
 
 <table><tr><td><?= $synonym ?></td></tr></table> <!-- don't judge me -->
+
+<div id="footer">
+  <a href="http://scrabble.io" target="_blank">made with &hearts; by scrabble</a>
+</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
