@@ -6,7 +6,6 @@
     <title>synonyms for awesome</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="awesome.css">
 
     <link rel="shortcut icon" href="favicon.ico">
@@ -19,13 +18,22 @@
       <span id="synonym"></span>
     </div>
     <div id="footer">
-      <a href="https://scrabble.io" target="_blank" rel="noopener noreferrer nofollow"><img src="s.png"><span>made with &hearts; by scrabble</span></a>
+      <a href="https://jarv.is/" target="_blank" rel="noopener noreferrer nofollow"><img src="s.png"><span>made with &hearts; by scrabble</span></a>
     </div>
     <script>
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-1563964-40','auto');
-      ga('send','pageview')
+      var _paq = _paq || [];
+      _paq.push(['setRequestMethod', 'POST']);
+      _paq.push(['setSecureCookie', true]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      _paq.push(['enableHeartBeatTimer']);
+      (function() {
+        var u='https://stats.jarv.is/';
+        _paq.push(['setTrackerUrl', u+'m.php']);
+        _paq.push(['setSiteId', '7']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.defer=true; g.src=u+'m.js'; s.parentNode.insertBefore(g,s);
+      })();
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>
