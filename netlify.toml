@@ -1,0 +1,37 @@
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+    Cache-Control = "max-age=3600, public"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    X-UA-Compatible = "IE=edge"
+    X-DNS-Prefetch-Control = "off"
+
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "max-age=604800, public"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "max-age=604800, public"
+
+[[headers]]
+  for = "/css/fonts/*"
+  [headers.values]
+    Cache-Control = "max-age=31536000, public"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "max-age=604800, public"
+
+[[headers]]
+  for = "*.txt"
+  [headers.values]
+    Cache-Control = "max-age=604800, public"
