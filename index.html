@@ -1,43 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Synonyms for Awesome</title>
-    <meta name="description" content="Make adjectives supercalifragilisticexpialidocious again.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="7TUzoAEmOsSmvDyVP86CBrT3lvuvFYQTLkz7_fQyTsI">
-    <link rel="stylesheet" href="css/awesome.css">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="preload" href="synonyms.txt" as="fetch">
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/awesome.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <span id="synonym"></span>
-    </div>
-    <div id="footer">
-      <a href="https://jarv.is/" target="_blank" rel="noopener">
-        <span>made with ❤️ by</span>
-        <img src="img/scrabble.png">
-        <span>scrabble</span>
-      </a>
-    </div>
-    <script>
-      var _paq = _paq || [];
-      _paq.push(['setRequestMethod', 'POST']);
-      _paq.push(['setSecureCookie', true]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      _paq.push(['enableHeartBeatTimer']);
-      (function() {
-        var u='https://stats.jarv.is/';
-        _paq.push(['setTrackerUrl', u+'send']);
-        _paq.push(['setSiteId', '7']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.defer=true; g.src=u+'stats.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-  </body>
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Synonyms for Awesome</title>
+  <meta name="description" content="Make adjectives supercalifragilisticexpialidocious again.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Signika:400,600&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      font-family: "Signika", sans-serif;
+      font-size: 5em;
+      color: #fafafa;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+      background-color: #7db500;
+      display: table;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    div#container {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-weight: 600;
+    }
+    div#plug {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+    }
+    div#plug a {
+      color: inherit;
+      text-decoration: none;
+    }
+    div#plug img {
+      height: 20px;
+      width: 20px;
+      margin-top: -3px;
+      margin-right: -4px;
+      vertical-align: middle;
+    }
+    @media (min-width:    0px) { html { font-size:  50%; } }
+    @media (min-width:  300px) { html { font-size:  70%; } }
+    @media (min-width:  500px) { html { font-size:  80%; } }
+    @media (min-width:  700px) { html { font-size: 120%; } }
+    @media (min-width: 1200px) { html { font-size: 200%; } }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <span id="synonym"></span>
+  </div>
+  <div id="plug">
+    <a href="https://jarv.is/" target="_blank" rel="noopener">
+      made with ❤️ by
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAEcUlEQVR4AU2QU6Ds3BWAv7WRZJKZuXNObdu2bbt9qe2X2n6/falt27bdXpsH4yRbTX6vvZe9DJeB/371PaXJq4F3Ye1jWANptOfyuTGyp6lXbr07mwPe5NqafDjyrlauaWZAy0Vg/vml95F0dkuie1rbNpNA7QWdAZm2hVnOdpou3RNjGYnD4GpCsgvn0yKlmHV43eBdW1zpBu/UxfhXJrvqzTm9//e3FNc8NYZwtZh2RHxERBwkk1IvAkoRk3hS0KqzhJhwrSe0C7Ky4vKjq37Hiv6zcs2SaCa7TV07+hSlEWNBKZsEiQI+Jrz3KIUxWSYRSEBelShjCa2naeYGoCfkw8stmrP/01ZZMTZDrMWHgFaGkdU0PhJjxF84OdpacIHkAzYb4OpVx6taaR1VRzA69EE2BS/OtXjfUpUlk2HF6Z05R89O+3w2xiXBOXzjsJlFJJJiQhtDTKEOwUfVEYSobV7EpDQhCYXuuFvz4z/s48s//xcf/Npved+nfsqf/neCLM+Jqb9fQ5eEzixoHdvFrkkxpJ6w2t3K29V6LcTYHVhtjHO+/vN/8uv/HOd2N7kWT37wnfj4t/7AVzrbC68wZlxVLOYzSKAAo2xjskFWT7eC6Qir1RJiHBqjVYwBjGXhIvN14O63vDa3vMHVGWQ5v/37PoJPWKPopwshEKLDdIcUrVe6GEVFviHjy19t2a086QOjd2ztLrj9za5FZjTv//Jv+PA3fg3B8Yh73JJRmTNfrBABSMTo8aEhQaJDpZVPxXDiiUkRAzbPqVvHlSZDnvLA2+FD4is//juv3ft1fvrnfUwmIxCBlDBaoUyOb1w0trKEIKr1qHY9n3i3XvbJShRaNE3TcLebX4O3PvfBvPoZ9+Vm17kyn/z2Hzh0covNzTEiAh1qpUhJzXpJME5pklIpGG2zldIGRKiqnN//5ySf/dFfadYNd7rZ1XnCA26NJMXv/34QRUJZS1/MuxZtTFzNzqcOUee3p3ixMyV6Qkqk4CBBEsWXf/ZPvvf7/7Dv6Fm++fN/k2Waq19p0uln+N2/j7DykcwapEsWrUKHmBSjTHe2omrrKssynIuksOa2N7gi08WN+NlfjvCD3+3j8t1NH3ufW3G7G1yZo6e3mc9rrNVkoqjX02iKoQColALtYqcEqSUlUIpAZDiwPOkBt+BlT70PL33SvXjWw2/HbW5wJQQh6ydRiuWyoagqRJkoSI+YTKGzQTmIfjr3bV0UZQVBUdeOGBNXqCy+HBGCxzUtdUpYLVy7Wz23feGEtTY1i+0cwOy54tXELWf63LmD1rRrRIDk+y4Eb5j5eX8DpXRBU69QylAMini1TS3zrRNydL6N2EFcnjqoAAyIi3Zw8Oz28ici+uplUe73rptla1YOynJcjicqOLcIrSzz8iq2reuiOT9D5eNVtnGV1XQ5R0XZMYP8JwDy2b1v4GKYHz9qi82rbEybqBY7Z6fA+obXuapuGjcKdlQNN6+0AHo7i3NHB3Z8tXG9nC57lYvg/33PYnYz6WCWAAAAAElFTkSuQmCC" alt="Scrabble" title="Scrib Scrab">
+      crabble
+    </a><br>
+    <a href="https://github.com/jakejarvis/synonyms-for-awesome" target="_blank" rel="noopener">view source</a>
+  </div>
+  <script>
+    var thesaurus = [ "acclaimed",
+                      "admirable",
+                      "alarming",
+                      "amazing",
+                      "applaudable",
+                      "astonishing",
+                      "astounding",
+                      "august",
+                      "awe-inspiring",
+                      "beaming",
+                      "beautiful",
+                      "beyond compare",
+                      "big-league",
+                      "breathtaking",
+                      "brilliant",
+                      "celebrated",
+                      "ceremonious",
+                      "choice",
+                      "commendable",
+                      "consummate",
+                      "crackerjack",
+                      "daunting",
+                      "delightful",
+                      "deluxe",
+                      "dignified",
+                      "distinguished",
+                      "dreamy",
+                      "effulgent",
+                      "eminent",
+                      "esteemed",
+                      "exalted",
+                      "excellent",
+                      "exceptional",
+                      "exemplary",
+                      "exquisite",
+                      "extraordinary",
+                      "eye-catching",
+                      "fabled",
+                      "fabulous",
+                      "famed",
+                      "fantastic",
+                      "faultless",
+                      "first-class",
+                      "first-rate",
+                      "five-star",
+                      "flawless",
+                      "formidable",
+                      "funkadelic",
+                      "grand",
+                      "gleaming",
+                      "glorious",
+                      "glowing",
+                      "godly",
+                      "gorgeous",
+                      "heavenly",
+                      "heroic",
+                      "illustrious",
+                      "immaculate",
+                      "immortal",
+                      "impeccable",
+                      "imposing",
+                      "impressive",
+                      "inconceivable",
+                      "incredible",
+                      "indelible",
+                      "indomitable",
+                      "intimidating",
+                      "irreproachable",
+                      "kick-butt",
+                      "kryptonian",
+                      "laudable",
+                      "legendary",
+                      "legit",
+                      "lionized",
+                      "lofty",
+                      "magnificent",
+                      "majestic",
+                      "marvelous",
+                      "masterful",
+                      "memorable",
+                      "meritorious",
+                      "mind-blowing",
+                      "model",
+                      "monumental",
+                      "moving",
+                      "mythical",
+                      "nifty",
+                      "noble",
+                      "notable",
+                      "noteworthy",
+                      "optimal",
+                      "out-of-this-world",
+                      "outstanding",
+                      "overwhelming",
+                      "palatial",
+                      "peachy",
+                      "perfect",
+                      "phenomenal",
+                      "prime",
+                      "polished",
+                      "prestegious",
+                      "prodigious",
+                      "radiant",
+                      "regal",
+                      "remarkable",
+                      "renowned",
+                      "respectable",
+                      "resplendent",
+                      "righteous",
+                      "scrupulous",
+                      "second-to-none",
+                      "sensational",
+                      "shining",
+                      "shiny",
+                      "shocking",
+                      "skillful",
+                      "smashing",
+                      "solid",
+                      "spectacular",
+                      "splendid",
+                      "splendiferous",
+                      "spotless",
+                      "staggering",
+                      "standout",
+                      "state-of-the-art",
+                      "stately",
+                      "sterling",
+                      "striking",
+                      "stunning",
+                      "stupefying",
+                      "stupendous",
+                      "sublime",
+                      "super",
+                      "superb",
+                      "supercalifragilisticexpialidocious",
+                      "superior",
+                      "terrific",
+                      "transcendent",
+                      "triumphant",
+                      "unforgettable",
+                      "unimpeachable",
+                      "unmatched",
+                      "unrivaled",
+                      "upstanding",
+                      "venerable",
+                      "wicked",
+                      "world-renowned",
+                      "wonderful",
+                      "wondrous",
+                      "worthy",
+                      "solid diamond",
+                      "ticket-worthy",
+                      "whiz-bang",
+                    ];
+
+    var winner = document.getElementById('synonym');
+    winner.innerHTML = thesaurus[Math.floor(Math.random() * thesaurus.length)];
+  </script>
+</body>
 </html>
