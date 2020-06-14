@@ -1,7 +1,11 @@
 # [Synonyms for Awesome](https://synonymsforawesome.com/) 👩‍🏫
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a4b9b29-d2c9-4529-bad1-d09618306dd1/deploy-status)](https://app.netlify.com/sites/distracted-mahavira-926e91/deploys)
+<a href="https://glitch.com/edit/?utm_content=project_synonyms-for-awesome&utm_source=remix_this&utm_medium=button&utm_campaign=glitchButton#!/remix/synonyms-for-awesome"><img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix this" height="33"></a>
 
 Making adjectives ~~awesome~~ meritorious, exemplary, and supercalifragilisticexpialidocious again.™
 
-### [Suggest a new synonym here!](https://github.com/jakejarvis/synonyms-for-awesome/edit/master/index.html)
+[**Suggest a new synonym here!**](https://github.com/jakejarvis/synonyms-for-awesome/edit/master/index.html)
+
+## License
+
+This project is released under the [**Creative Commons Attribution 4.0 International License**](LICENSE.md) (CC-BY-4.0).
