@@ -4,7 +4,7 @@
 
 Making adjectives ~~awesome~~ meritorious, exemplary, and supercalifragilisticexpialidocious again.™
 
-[**Suggest a new synonym here!**](https://github.com/jakejarvis/synonyms-for-awesome/edit/master/index.html)
+[**Suggest a new synonym here!**](https://github.com/jakejarvis/synonyms-for-awesome/edit/gh-pages/index.html)
 
 ## License
 
